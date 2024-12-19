@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .container {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
+        .controls {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+        }
+        .result {
+          width: 200px;
+          height: 200px;
+          border: 1px solid gray;
+          margin-bottom: 20px;
+          display: flex; 
+          justify-content: center; 
+          align-items: center;
+          text-align: center; 
+        }
+        .circle {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          background-color: blanchedalmond;
+          display: flex; 
+          justify-content: center; 
+          align-items: center;
+          text-align: center; 
+          }
+        .square {
+          width: 80%;
+          height: 80%;
+          background-color: blanchedalmond;
+          display: flex; 
+          justify-content: center; 
+          align-items: center;
+          text-align: center; 
+        }
+        button {
+          cursor: pointer;
+        }
+      </style>
+  </head>
+  
+  <body>
+    <div class="container">
+    <div class="result"></div>
+        <div class="controls">
+            <div class="figureEdit">
+                <button id="circleBtn">Круг</button>
+                <button id="squareBtn">Квадрат</button>
+            </div>
+            <div class="colorEdit">
+                <button style="background-color: #E32636;" id="btnRed">Красный</button>
+                <button style="background-color: #FDE910;" id="btnYlw">Желтый</button>
+                <button style="background-color: #138808;" id="btnGrn">Зеленый</button>
+                <button style="background-color: #1560BD;" id="btnBlue">Синий</button>
+            </div>
+            <div class="textEdit">
+                <input type="text" id="textInput" placeholder="Введите текст">
+                <button id="addTextBtn">Добавить текст</button>
+            </div>
+            <button id="clearBtn">Очистить</button>
+        </div>
+    </div>
+    <script src="code.js"></script>
+  </body>
+</html>
